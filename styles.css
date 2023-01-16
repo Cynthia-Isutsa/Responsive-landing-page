@@ -30,6 +30,9 @@ a{
      min-height: 100vh;
      overflow: hidden;
      background-color: var(--backgroundColor);
+     display:flex;
+     flex-direction: column;
+     justify-content: space-between;
 }
 
 .logo img{
@@ -88,4 +91,56 @@ header .container{
 .btn:hover{
     background-color: var(--hovorColor);
     transform: scale(1) !important;
+}
+.showcase .container{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+.big-title{
+    font-size: 1.4rem;
+    color:var(--darkOne);
+    text-transform: capitalize;
+    line-height: 1.4;
+}
+.text{
+    color: var(--lightOne);
+    font-size: 1.1rem;
+    margin: 1.9rem 0 2.4rem;
+    max-width: 600px;
+    line-height: 2.3;
+}
+.ctn{
+    box-shadow: 0 0 40px 2px rgba(0, 0, 0, 0.05);
+}
+.right{
+    width: 123%;
+    transform: translate(15%, 25px);
+    height: 85vh;
+    display: flex;
+    justify-items: center;
+}
+.toggle-btn{
+    display: inline-block;
+    border:none;
+    background-color: var(--darktwo);
+    color: var(--backgroundColor);
+    outline:none;
+    cursor:pointer;
+    height: 39px;
+    width: 39px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+.toggle-btn:hover{
+    background-color: var(--mainColor);
+}
+.toggle-btn i{
+    line-height: 39px;
+}
+.toggle-btn i:last-child{
+    display: none;
+    
 }
